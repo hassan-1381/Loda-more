@@ -1,0 +1,241 @@
+@import url(./reset.css);
+
+
+@font-face {
+    font-family: "YekanBakh-Bold";
+    src: url(../fonts/YekanBakh-Bold.woff);
+}
+
+@font-face {
+    font-family: "YekanBakh-Heavy";
+    src: url(../fonts/YekanBakh-Heavy.woff);
+}
+
+@font-face {
+    font-family: "YekanBakh-Medium";
+    src: url(../fonts/YekanBakh-Medium.woff);
+}
+
+@font-face {
+    font-family: "YekanBakh-Regular";
+    src: url(../fonts/YekanBakh-Regular.woff);
+}
+
+
+body {
+    font-family: "YekanBakh-Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+*,
+*::after,
+*::before {
+    font-family: "YekanBakh-Heavy";
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+
+.svg {
+    display: none;
+}
+
+
+
+.lodamore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 960px;
+    margin: 20px auto;
+    gap: 20px;
+    font-family: "YekanBakh-Bold";
+    margin: 100px auto;
+
+}
+
+.lodamore__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lodamore__title {
+    font-size: 30px;
+    color: #1D2939;
+    font-weight: 900;
+
+}
+
+.lodamore__title--img {}
+
+
+
+.text {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    transition: all ease 1000ms;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 16px;
+
+}
+
+.text__box {
+    padding: 0 18px;
+    height:97%;
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D2939;
+    font-family: "YekanBakh-Regular";
+    line-height: 24px;
+    overflow: hidden;
+
+
+}
+
+
+
+
+
+
+.openbox{
+    height: 1008px;
+    transition: all ease-in-out 1000ms;
+}
+
+
+.openbox .text__box {
+    overflow-y: scroll;
+    direction:ltr ;
+}
+
+
+
+.openbox .text__box::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+    height: 10px;
+    padding: 2px;
+
+}
+
+.openbox .text__box::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 50px;
+    height: 10px;
+
+
+
+}
+
+
+/* .openbox .text__box::-webkit-scrollbar-track{
+    height: 20px;
+} */
+
+
+.text__shadow {
+    position: absolute;
+    background: linear-gradient(360deg, #F5F5F5 0%, rgba(245, 245, 245, 0.54) 71.07%, rgba(245, 245, 245, 0) 100%);
+    height: 158px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 0px 0px 16px 16px;
+    z-index: 10;
+
+
+
+}
+
+
+
+
+.btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 302px;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    gap: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    bottom: -24px;
+    left: 0px;
+    right: 0px;
+    justify-self: center;
+    transition: all ease-in-out 100ms;
+    background-color: #EB5E28;
+    color: #ffffff;
+    z-index: 20;
+    
+}
+
+
+
+
+
+
+.btn__text {
+    font-family: "YekanBakh-Bold";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+
+}
+
+
+
+.btn__open,
+.btn__close {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.btn__close {
+
+    display: none;
+}
+
+
+
+.openbox .btn__open {
+    display: none;
+}
+
+
+
+.openbox .btn__close {
+    display: inherit;
+
+}
+
+
+
+.openbox .btn {
+    background-color: #ffffff;
+    color: #EB5E28;
+    border: 1px solid #EB5E28;
+}
+
+
+.openbox .text__shadow {
+    display: none;
+
+}
